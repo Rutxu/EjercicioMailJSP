@@ -14,7 +14,7 @@ public class AuthHelpers {
 
 			Class.forName("com.mysql.jdbc.Driver");
 			Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/test", "root", "practicas");
-			PreparedStatement ps = con.prepareStatement("select * from users where name=? and password=? and validate =1F");
+			PreparedStatement ps = con.prepareStatement("select * from users where name=? and password=? and validate ='True'");
 			ps.setString(1, username);
 			ps.setString(2, password);
 			System.out.println(ps);

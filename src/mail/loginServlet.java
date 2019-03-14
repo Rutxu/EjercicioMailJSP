@@ -38,7 +38,7 @@ public class loginServlet extends HttpServlet {
 				HttpSession session = request.getSession();
 				session.setAttribute("user", username);
 
-				out.println("Inicio de sesion completado");
+				out.println("<h1 style='text-align:center;color:blue;background-color:grey; margin:0; padding:5px'>Menú Principal</h1>");
 			} else {
 				out.println("Usuario o contraseña incorrecta o su email no ha sido validado");
 			}
