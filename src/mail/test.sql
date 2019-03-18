@@ -44,8 +44,8 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `email`, `name`, `password`, `validate`) VALUES
-(41, 'ruben.sierra.perez.17@gmail.com', 'ruben', 'UwDT0TrHzC3zWMNlSY+GfA==', 'True'),
-(42, 'ruben.sierra.perez.17@gmail.com', 'joel', 'z5ICGvTaNShKkeAOB39efQ==', 'True');
+(41, 'ruben.sierra.perez.17@gmail.com', 'ruben', 'UwDT0TrHzC3zWMNlSY+GfA==', '1'),
+(42, 'ruben.sierra.perez.17@gmail.com', 'joel', 'z5ICGvTaNShKkeAOB39efQ==', '1');
 
 --
 -- Indexes for dumped tables
