@@ -38,7 +38,9 @@ public class loginServlet extends HttpServlet {
 				HttpSession session = request.getSession();
 				session.setAttribute("user", username);
 
-				out.println("<h1 style='text-align:center;color:blue;background-color:grey; margin:0; padding:5px'>Menú Principal</h1>");
+				out.println("<html><head><title>Menú Principal</title></head><body><h1 style='text-align:center;color:blue; margin:0; padding:5px'>Menú Principal</h1>"
+						+ "<p style='text-align:center;'><b>Usuario:</b> " + session.getAttribute("user") +"</p><p><a href='index.jsp'>"
+								+ "Desconectar</a></p></body></html>");
 			} else {
 				out.println("Usuario o contraseña incorrecta o su email no ha sido validado");
 			}

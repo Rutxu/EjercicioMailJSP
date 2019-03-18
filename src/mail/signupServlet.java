@@ -72,7 +72,7 @@ public class signupServlet extends HttpServlet {
 
 					StringBuilder sb = new StringBuilder();
 					sb.append("<h1>Confirma tu direccion de correo</h1>");
-					sb.append("<a href=\"http://localhost:8080/AuthProject/confirmar?id=");
+					sb.append("<a href=\"http://localhost:8080/EjercicioMailJSP/confirmar?id=");
 					MessageDigest md = MessageDigest.getInstance("SHA-512");
 					byte[] a = md.digest((username + email).getBytes());
 					String validation = DatatypeConverter.printHexBinary(a);
@@ -88,7 +88,7 @@ public class signupServlet extends HttpServlet {
 
 					out.println(docType + "<html>\n" + "<head><title>" + title + "</title></head>\n" + "<body>\n"
 							+ "<h1 align = \"center\">" + title + "</h1>\n" + "<p align = \"center\">" + res + "</p>\n"
-							+ "</body>" + "</html>");
+							+ "<a href='index.jsp'>Volver</a>"+"</body>" + "</html>");
 					AuthHelpers.insertValidation(username, validation);
 				} catch (MessagingException mex) {
 					mex.printStackTrace();

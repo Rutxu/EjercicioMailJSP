@@ -4,11 +4,11 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>Login</title>
 </head>
 <body>
 
-	<h1 style="color: blue">Login</h1>
+	<h1 style="color: blue">Inicio Sesión</h1>
 	<form method="post" action="login">
 		<div class="container">
 			<label for="uname"><b>Nombre de Usuario</b></label> 
@@ -19,11 +19,11 @@
 			<br>
 			<input type="password" placeholder="Contraseña" name="psw" required>
 			<br>
-			<button type="submit">Login</button>
+			<button type="submit">Iniciar</button>
 		</div>
 	</form>
 
-	<h1 style="color: blue">SignUp</h1>	
+	<h1 style="color: blue">Registrarse</h1>	
 	<form method="post" action="signup">
 		<div class="container">
 			<label for="uname"><b>Nombre de Usuario</b></label> 
@@ -38,7 +38,7 @@
 			<br>
 			<input type="password" placeholder="Contraseña" name="psw" required>
 			<br>
-			<button type="submit">Sign Up</button>
+			<button type="submit">Registrar</button>
 		</div>
 	</form>
 
